@@ -1,0 +1,128 @@
+
+.footer__container {
+    width: 76vw;
+    margin: 0 auto;
+}
+.footer__info {
+    padding-top: 4.16vw;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(10px,1vw,30px);
+}
+.footer__info-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: clamp(40px, 27.3vw, 500px);
+}
+.footer__title {
+    white-space: nowrap;
+    font-size: var(--twenty-eight);
+    font-weight: 700;
+}
+.footer__info-text {
+    font-size: var(--eighteen);
+}
+
+.footer__download-title {
+    display: flex;
+    justify-content: end;
+    padding-right: 14.5%;
+    padding-top: 2vw;
+}
+.footer__soc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+.socials__footer {
+    display: flex;
+    gap: 0.8vw;
+}
+
+.social__footer-link {
+    display: flex;
+    width: clamp(16px, 2.57vw, 50px);
+    height: clamp(16px, 2.57vw, 50px);
+    background: var(--general-bg);
+    border: 1px solid transparent;
+    border-radius: .7vw;
+    align-items: center;
+    justify-content: center;
+
+    transition: var(--transition);
+}
+.social__footer-link img {
+    width: clamp(10px, 1.23vw, 30px);
+    height: clamp(10px, 1.23vw, 30px);
+}
+.social__footer-link:hover {
+    border: 1px solid #000000;
+}
+.footer__download {
+    padding-right: 6vw;
+}
+
+.footer__download-img {
+    width: clamp(51px, 10.7vw, 257px);
+    height: clamp(30px,3.54vw,200px);
+}
+
+
+
+.footer__accordion-inner {
+    background-color: var(--black-text);
+    cursor: pointer;
+    padding: 1.3vw;
+    padding-left: 5.27vw;
+    width: 100%;
+    border-top: solid 1px #BEBCBD;
+    border-bottom: solid 1px #BEBCBD;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: var(--transition);
+}
+.footer__accordion-icon {
+    transition: var(--transition);
+}
+.footer__accordion-inner:hover {
+    background-color: #7c7c7c; 
+}
+.footer__accordion-active svg{
+    transition: var(--transition);
+    transform: rotate(-180deg);
+}
+
+.footer__panel {
+    padding: 0 80px;
+    background-color: var(--black-text);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+.footer__panel-text {
+    border-bottom: solid 1px;
+    transition: var(--transition);
+    padding:10px 0;
+}
+.footer__panel-text a{ 
+    transition: var(--transition);
+}
+.footer__panel-text:hover a{
+    color: #7c7c7c
+}
+
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy__footer {
+    padding: 35px 0;
+}
